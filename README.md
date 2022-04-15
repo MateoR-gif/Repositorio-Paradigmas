@@ -3,7 +3,7 @@
 
 object MyClass {
 
-    def main(args: Array[String]) {
+    def main(args: Array[String]): Unit = {
         var n = 3
         var result = 1
         n = n - 1
