@@ -62,7 +62,16 @@ object MyClass {
 
 --CUARTO PUNTO --
 
-
+object Main extends App{
+    def comb[A](ls: List[A], k: Int): List[List[A]] = {
+      if (k == 0) List(Nil)
+      else ls match {
+        case Nil => List()
+        case h :: t => comb(t, k) ++ comb(t, k - 1).map(h :: _)
+      }
+    }
+    comb(List(1, 2, 3, 4, 5), 4) foreach println;
+}
 
 
 --QUINTO PUNTO--
