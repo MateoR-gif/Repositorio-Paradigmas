@@ -16,22 +16,16 @@ object MyClass {
 
 --SEGUNDO PUNTO--
 
-package scala.math
-
 object MyClass {
 
   def main(args: Array[String]) : Unit = {
-    var a = 6
-    var b = 8
-    var c = 10
+    var a = 3
+    var b = 4
+    var c = 5
 
     a = a*a
     b = b*b
     c = c*c
-
-
-    // La siguiente linea de codigo sirve cuando c es un numero decimal:
-    // c = rint(c)
 
     var res = a+b
 
